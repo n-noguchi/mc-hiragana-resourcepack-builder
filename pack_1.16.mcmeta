@@ -1,0 +1,14 @@
+{
+   "pack": {
+      "pack_format": 5,
+      "description": "Hiragana (Minecraft 1.16)"
+   },
+   "language" : {
+      "hi_jp" : {
+         "name": "にほんご(ひらがな)",
+         "region":"JP",
+         "bidirectional":false
+      }
+   }
+}
+
