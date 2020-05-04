@@ -30,7 +30,7 @@ Dockerが利用できる環境を準備しておきます。<br>
 ```bash
 # windowsのユーザー名は [username] としています。
 # 使用するときは環境に合わせて置き換えてください。
-docker run -v /c/Users/noguo/AppData/Roaming/.minecraft/assets:/assets:ro -v /c/Users/noguo/AppData/Roaming/.minecraft/resourcepacks:/resourcepacks:rw -e "MINECRAFT_VERSION=1.12" docker.pkg.github.com/n-noguchi/mc-hiragana-resourcepack-builder/mc-hiragana-resourcepack-builder:1.0.0
+docker run -v /c/Users/[username]/AppData/Roaming/.minecraft/assets:/assets:ro -v /c/Users/[username]/AppData/Roaming/.minecraft/resourcepacks:/resourcepacks:rw -e "MINECRAFT_VERSION=1.12" docker.pkg.github.com/n-noguchi/mc-hiragana-resourcepack-builder/mc-hiragana-resourcepack-builder:1.0.0
 ```
 
 **Ubuntu 18.04 (Windows Subsystem for Linux)での実行:**
@@ -41,7 +41,16 @@ docker run -v /c/Users/noguo/AppData/Roaming/.minecraft/assets:/assets:ro -v /c/
 docker run -v /mnt/c/Users/[username]/AppData/Roaming/.minecraft/assets:/assets:ro \
 -v /mnt/c/Users/[username]/AppData/Roaming/.minecraft/resourcepacks:/resourcepacks:rw \
 -e "MINECRAFT_VERSION=1.12" docker.pkg.github.com/n-noguchi/mc-hiragana-resourcepack-builder/mc-hiragana-resourcepack-builder:1.0.0
+```
 
+**macOS**
+
+```bash
+# macOSのユーザー名は [username] としています。
+# 使用するときは環境に合わせて置き換えてください。
+docker run -v /Users/[username]/Library/Application Support/minecraft/assets:/assets:ro \
+-v /Users/[username]/Library/Application Support/minecraft/resourcepacks:/resourcepacks:rw \
+-e "MINECRAFT_VERSION=1.12" docker.pkg.github.com/n-noguchi/mc-hiragana-resourcepack-builder/mc-hiragana-resourcepack-builder:1.0.0
 ```
 
 ## パラメーター
